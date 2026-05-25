@@ -1,0 +1,35 @@
+{
+  "name": "coding-cat",
+  "displayName": "Coding Cat 🐱",
+  "description": "A cute cat that watches you code in VS Code",
+  "version": "0.0.1",
+  "publisher": "strayarcwolf",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": ["Other"],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "coding-cat.start",
+        "title": "Coding Cat: Start 🐱"
+      },
+      {
+        "command": "coding-cat.stop",
+        "title": "Coding Cat: Stop"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0"
+  }
+}

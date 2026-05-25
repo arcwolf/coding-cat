@@ -1,0 +1,7 @@
+node_modules/
+out/
+media/frames/
+media/try.gif
+media/cat_idle.gif
+*.vsix
+.DS_Store
