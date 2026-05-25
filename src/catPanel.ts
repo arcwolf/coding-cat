@@ -121,7 +121,7 @@ export class CatPanel {
 </head>
 <body>
   <div id="scene">
-    <canvas id="catCanvas" width="160" height="160"></canvas>
+    <canvas id="catCanvas" width="240" height="240"></canvas>
     <div id="laptop-wrap">
       <svg viewBox="0 0 160 60" width="160" height="60" xmlns="http://www.w3.org/2000/svg">
         <rect x="0" y="0" width="160" height="56" rx="4" fill="#1e1e2e" stroke="#45475a" stroke-width="1.5"/>
@@ -153,7 +153,7 @@ let loaded = 0;
 function drawFrame(idx) {
   if (imgs[idx] && imgs[idx].complete) {
     ctx.clearRect(0, 0, 160, 160);
-    ctx.drawImage(imgs[idx], 0, 0, 160, 160);
+    ctx.drawImage(imgs[idx], 0, 0, 240, 240);
   }
 }
 
